@@ -1,13 +1,4 @@
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed'  ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
 
 const eqArrays = function(array1, array2) {
   //check initially if the lengths are the same
@@ -26,6 +17,15 @@ return true
 console.log(eqArrays([10, 20, 30, 40,], [10, 20, 30]))// should FAiL = false
 console.log(eqArrays([2,8,0],[2,8,0])) //should pass = true
 console.log(eqArrays([10,9,8,7,6],[10,9,7,8,6]))//should Fail = false 
+
+const assetArrayEqual= function(array1,array2) {
+  if (eqArrays(array1, array2) === true){
+  return "Pass✅ " ; 
+  }else {
+    return "Fail ❌ ";
+  }
+
+}
 
 const letterPositions = function(sentence){
   //set up function (letterPositios)
@@ -46,4 +46,5 @@ const letterPositions = function(sentence){
   }
   return newList;
 }
+assertArraysEqual(letterPositions("hello").e,[1]);
 console.log(letterPositions("boooyashakkala"))
