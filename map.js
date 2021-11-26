@@ -35,3 +35,10 @@ const results1 = map(words, word => word[0]);
 console.log(results1);
 assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 
+const result2 = map(words, word => (`${word[0]} hi`));
+console.log(result2);
+assertArraysEqual(result2, [ 'g hi', 'c hi', 't hi', 'm hi', 't hi' ]);
+ 
+const result3 = map(words, word => (word.length));
+console.log(result3);
+assertArraysEqual(result3, [ 6, 7, 2, 5, 3 ]);
