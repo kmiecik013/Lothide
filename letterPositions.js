@@ -20,9 +20,9 @@ console.log(eqArrays([10,9,8,7,6],[10,9,7,8,6]))//should Fail = false
 
 const assetArrayEqual= function(array1,array2) {
   if (eqArrays(array1, array2) === true){
-  return "Pass✅ " ; 
+  console.log("Pass✅ ") ; 
   }else {
-    return "Fail ❌ ";
+    console.log("Fail ❌ ");
   }
 
 }
@@ -47,4 +47,3 @@ const letterPositions = function(sentence){
   return newList;
 }
 assertArraysEqual(letterPositions("hello").e,[1]);
-console.log(letterPositions("boooyashakkala"))

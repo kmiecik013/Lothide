@@ -21,4 +21,4 @@ const countLetters = function(str) {
 
   return finalCount
 }
-console.log(countLetters("bubble"))
+console.log(countLetters("djweiofhoewhfwhfo"))

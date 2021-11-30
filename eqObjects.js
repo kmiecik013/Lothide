@@ -53,10 +53,10 @@ if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc)); // => true
+console.log("case",eqObjects(cd, dc)); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+console.log("case2", eqObjects(cd, cd2)); // => false
 
 //const ab = { a: "1", b: "2" };
 //const ba = { a: "1", b: "3" };

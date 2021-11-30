@@ -5,8 +5,12 @@ const assertEqual = function(actual, expected) {
     console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
 
-module.exports = assertEqual;
+const head = function(array) {
+  if (array ===[]){
+    return "underfined";
+  } else {
+  return array[0];
+}
+};
 

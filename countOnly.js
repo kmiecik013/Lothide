@@ -10,7 +10,7 @@ assertEqual(1,1);
 
 const countOnly = function(allItems,itemsToCount) {
 const result = {};
-for(const item of allItems){
+for (const item of allItems){
   if (itemsToCount[item]) {
    
   if (result[item]){
